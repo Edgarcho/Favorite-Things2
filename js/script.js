@@ -5,9 +5,9 @@ $(document).ready(function(){
     var favoritePresident= $("input#president").val();
     var favoriteThings= [favoriteFood, favoriteMusic, favoritePresident]
     $("#result").show();
-    $(".list").prepend(<li>favoriteThings[0]</li>);
-    $(".list").prepend(<li>favoriteThings[1]</li>);
-    $(".list").prepend(<li>favoriteThings[2]</li>);
+    $(".list").append(favoriteThings[0]);
+    $(".list2").append(favoriteThings[1]);
+    $(".list3").append(favoriteThings[2]);
     event.preventDefault();
   });
 });
